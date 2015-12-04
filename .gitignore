@@ -1,0 +1,10 @@
+
+build/intermediates/dex-cache/cache.xml
+
+build/intermediates/model_data.bin
+
+*.iml
+
+local.properties
+
+app/fabric.properties
