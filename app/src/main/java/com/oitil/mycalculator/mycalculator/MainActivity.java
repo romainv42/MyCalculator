@@ -59,12 +59,17 @@ public class MainActivity extends ActionBarActivity {
         Answers.getInstance().logCustom(new CustomEvent("Calculator opened")
                 .putCustomAttribute("Category", "Math")
                 .putCustomAttribute("Length", 42));
+        crashMe("KeyMetrics Failed");
     }
 
     public void forceCrash(View view) {
         this.logUser();
 
-        throw new RuntimeException("This is BIG crash");
+        crashMe("Force Crash Succeed");
+    }
+
+    private void crashMe(String msg) {
+        throw new RuntimeException(msg);
     }
 
 }
