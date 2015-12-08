@@ -15,7 +15,7 @@
         android:onClick="forceCrash"
         android:layout_centerHorizontal="true"
         android:id="@+id/btn0"
-        android:layout_below="@+id/tv" />
+        android:layout_below="@id/tv" />
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -23,6 +23,14 @@
         android:onClick="onKeyMetric"
         android:layout_centerHorizontal="true"
         android:id="@+id/btn1"
-        android:layout_below="@+id/btn0" />
+        android:layout_below="@id/btn0" />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Divided By 0"
+        android:onClick="makeDivision"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn2"
+        android:layout_below="@id/btn1" />
 
 </RelativeLayout>

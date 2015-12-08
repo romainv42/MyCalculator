@@ -72,4 +72,12 @@ public class MainActivity extends ActionBarActivity {
         throw new RuntimeException(msg);
     }
 
+    private int divided(int a, int b) {
+        return (a / b);
+    }
+
+    public void makeDivision(View view) {
+        int result = divided(42, 0);
+
+    }
 }
